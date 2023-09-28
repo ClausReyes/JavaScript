@@ -9,3 +9,12 @@ if (combo <= 3000) {alert("Podria interesarte nuestro paquete A");
 } else { alert("Podri interesarte nuestro paquete premium")}
 
 
+// ciclos con while
+
+let contraseña = parseInt(prompt("Ingrese contraseña"));
+
+while (contraseña != "2612"){
+alert("contraseña incorrecta");
+contraseña = number(prompt("Ingrese contraseña"));
+}
+alert ("Bienvenida Claudia Reyes")
