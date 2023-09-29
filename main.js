@@ -18,3 +18,31 @@ alert("contraseña incorrecta");
 contraseña = number(prompt("Ingrese contraseña"));
 }
 alert ("Bienvenida Claudia Reyes")
+
+// funcion
+
+function cFinal(){
+    let precio = parseInt(prompt("Ingresa el precio del servicio que este interesado"));
+    let mensualidades = parseInt(prompt("Ingrese el numero de mensualidad que pagara el servicio (1 o 3)"));
+    valortotal = precio;
+
+    while(precio !== 0 && mensualidades !== 0){
+        switch(mensualidades){
+            case 1:
+            porcentaje = (precio * 8) /100;
+            valortotal = precio + porcentaje
+            alert(`El valor  final de tu producto en ${mensualidades} mensualidad es de ${valortotal}`);
+            break;
+
+            case 2:
+                porcentaje = (precio * 30) /100;
+                valortotal = precio + porcentaje
+                alert(`El valor  final de tu producto en ${mensualidades} mensualidad es de ${valortotal}`);
+                break;  
+        }
+        precio = parseInt(prompt("Ingresa el precio del servicio que este interesado"));
+        mensualidades = parseInt(prompt("Ingrese el numero de mensualidad que pagara el servicio (1 o 3)"));
+    
+    }
+}
+cFinal();
