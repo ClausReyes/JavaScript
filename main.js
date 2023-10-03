@@ -6,7 +6,7 @@ if (combo <= 3000) {alert("Podria interesarte nuestro paquete A");
     
 }else if ( combo <4000){alert("Podria interesarte nuestro paquetes de servicio B ");
 
-} else { alert("Podri interesarte nuestro paquete premium")}
+} else { alert("Podria interesarte nuestro paquete premium")}
 
 
 // ciclos con while
@@ -21,28 +21,29 @@ alert ("Bienvenida Claudia Reyes")
 
 // funcion
 
-function cFinal(){
-    let precio = parseInt(prompt("Ingresa el precio del servicio que este interesado"));
-    let mensualidades = parseInt(prompt("Ingrese el numero de mensualidad que pagara el servicio (1 o 3)"));
-    valortotal = precio;
+function vFinal() {
+    let valor = Number(prompt("Ingrese el precio de su producto"));
+    let mensualidades = Number(prompt("Ingrese el numero mensualidades a pagar (3 o 6)"))
+    valorFinal = valor;
 
-    while(precio !== 0 && mensualidades !== 0){
-        switch(mensualidades){
-            case 1:
-            porcentaje = (precio * 8) /100;
-            valortotal = precio + porcentaje
-            alert(`El valor  final de tu producto en ${mensualidades} mensualidad es de ${valortotal}`);
-            break;
+    while (valor != 0 && mensualidades != 0){
+        switch (mensualidades){
+        case 3:
+        porcentaje = (valor * 5) / 100;
+        valorFinal += porcentaje;
+        alert(`El valor total de tu producto en ${mensualidades} mensualidades es ${valorFinal}`)
+        break;
 
-            case 2:
-                porcentaje = (precio * 30) /100;
-                valortotal = precio + porcentaje
-                alert(`El valor  final de tu producto en ${mensualidades} mensualidad es de ${valortotal}`);
-                break;  
+        case 6:
+        porcentaje = (valor * 10) / 100;
+        valorFinal += porcentaje;
+        alert(`El valor total de tu producto en ${mensualidades} mensualidades es ${valorFinal}`)
+        break; 
         }
-        precio = parseInt(prompt("Ingresa el precio del servicio que este interesado"));
-        mensualidades = parseInt(prompt("Ingrese el numero de mensualidad que pagara el servicio (1 o 3)"));
-    
+        valor = Number(prompt("Ingrese el precio de su producto"));
+        mensualidades = Number(prompt("Ingrese el numero mensualidades a pagar (3 o 6)"))
+
     }
+
 }
-cFinal();
+vFinal();
