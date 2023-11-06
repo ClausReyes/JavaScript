@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+}
+
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+height: 12vh;
+background-color: black;
+color: white;
+font-size: medium;
+}
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: whitesmoke;
+    margin-top: 4vh;
+    cursor: pointer;
+
+}
+.ver-carrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh; 
+    cursor: pointer;
+    
+    
+}
+.banner-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: whitesmoke;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+
+.restar{
+    cursor: pointer;
+}
+span.sumar{
+    cursor: pointer;
+}
+
+/* banner*/
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url(./img/arco-rosa5.JPG);
+}
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px, 1px, 3px, rgba(0, 0, o, .3);
+}
+
+.banner h1 {
+    margin: 0;
+    color: whitesmoke;
+    text-shadow: 1px, 1px, 3px, rgba(0, 0, o, .3);
+    font-size: 62px;
+    font-weight: bold;
+
+}
+
+.shop-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial;
+
+}
+.price{
+    color: grey;
+    font: 22px;
+}
+.card > img{
+    width: 80%;
+    height: 250px;
+}
+.card button:hover{
+    opacity: 0.7;
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.modal-container{
+width: 80%;
+margin: 0 10%;
+max-height: 88vh;
+color: white;
+background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: fixed;
+overflow: auto;
+z-index: 9;
+top: 12vh;
+scrollbar-color: none;
+}
+
+.modal.container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.delete-product{
+    cursor: pointer;
+};
+
+.cantidad-carrito{
+background-color: red;
+border-radius: 50%;
+font-size: 12px;
+padding: 4px;
+top: 37px;
+right: 14px; 
+position: absolute;
+display: none;
+color: white;
+font-size: 5px;
+};
