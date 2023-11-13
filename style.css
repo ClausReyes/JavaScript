@@ -12,7 +12,7 @@ display: flex;
 justify-content: space-between;
 height: 12vh;
 background-color: black;
-color: white;
+color: mediumaquamarine;
 font-size: medium;
 }
 .navbar-logo{
@@ -181,7 +181,7 @@ scrollbar-color: none;
     cursor: pointer;
 };
 
-.cantidad-carrito{
+span .cantidad-carrito{
 background-color: red;
 border-radius: 50%;
 font-size: 12px;
@@ -193,3 +193,4 @@ display: none;
 color: white;
 font-size: 5px;
 };
+

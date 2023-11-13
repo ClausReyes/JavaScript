@@ -1,5 +1,5 @@
     
-const pintarCarrito = () => {
+const pintarCarrito = () =>{ 
     modalContainer.innerHTML = "";
     modalContainer.style.display="flex";    
     const modalHeader = document.createElement("div");   
@@ -36,13 +36,16 @@ const pintarCarrito = () => {
     let restar = carritoContent.querySelector(".restar");
    
     restar.addEventListener("click", () =>{
-        product.cantidad--;
+        if (product.cantidad !== 1){
+          product.cantidad--;}
         pintarCarrito();
     });
     let sumar = carritoContent.querySelector(".sumar");
    
     sumar.addEventListener("click", () =>{
+       
         product.cantidad++;
+        
         pintarCarrito();
     });
     
@@ -57,7 +60,7 @@ eliminarProducto(product.id);
     // carritoContent.append(borrar);
     // borrar.addEventListener("click", eliminarProducto);
   });
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
     totalBuying.innerText = `Total a pagar $ ${total} `;
