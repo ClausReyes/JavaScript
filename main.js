@@ -5,6 +5,10 @@ const modalContainer = document.getElementById("modal-container");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const skus = async() =>  {
+    const response = await fetch("data.json")
+    const data = await response.json();
+};
 productos.forEach((product)=> {
 let content = document.createElement("div"); 
 content.className = "card";  
