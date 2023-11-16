@@ -11,8 +11,8 @@ body {
 display: flex;
 justify-content: space-between;
 height: 12vh;
-background-color: black;
-color: mediumaquamarine;
+background-color:  black;
+color: gray;
 font-size: medium;
 }
 .navbar-logo{
@@ -51,8 +51,8 @@ span.sumar{
 
 .banner{
     background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-position:initial;
+    height: 70vh;
     background-image: url(./img/arco-rosa5.JPG);
 }
 
@@ -193,4 +193,3 @@ display: none;
 color: white;
 font-size: 5px;
 };
-

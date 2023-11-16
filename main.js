@@ -5,10 +5,12 @@ const modalContainer = document.getElementById("modal-container");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const skus = async() =>  {
-    const response = await fetch("data.json")
-    const data = await response.json();
+const getSku= async() => {
+    const response = await fetch("sku.json");
+    const data=  await response.json
 };
+
+getSku();
 productos.forEach((product)=> {
 let content = document.createElement("div"); 
 content.className = "card";  
@@ -25,7 +27,12 @@ comprar.className = "comprar"
 content.append(comprar);
 
 
-comprar.addEventListener("click", () => {
+comprar.addEventListener("click", () => {Swal.fire({
+    title: "Tu producto ha sido agregado",
+    text: "Haz click en el carrito para aumentar la cantidad",
+    icon: "success"
+  });
+    
 const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
 if(repeat){
     carrito.map((prod) => {
@@ -52,3 +59,4 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 
 JSON.parse(localStorage.getItem("carrito"));
+
