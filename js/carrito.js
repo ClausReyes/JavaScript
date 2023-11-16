@@ -59,12 +59,12 @@ const pintarCarrito = () =>{
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Si, borrar"
+            confirmButtonText: "Si, eliminar"
           }).then((result) => {
             if (result.isConfirmed) {
               Swal.fire({
-                title: "Borrar",
-                text: "Tu producto ha sido eliminado",
+                title: "Tu producto ha sido eliminado",
+                
                 icon: "success"
               });
             }
