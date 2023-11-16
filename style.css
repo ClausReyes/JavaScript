@@ -10,12 +10,12 @@ body {
 .navbar{
 display: flex;
 justify-content: space-between;
-height: 12vh;
+height: 14vh;
 background-color:  black;
-color: gray;
+color: white;
 font-size: medium;
 }
-.navbar-logo{
+.navbar-log{
     justify-self: start;
     margin-left: 20px;
     color: whitesmoke;
