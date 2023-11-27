@@ -7,11 +7,13 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const getSku= async() => {
     const response = await fetch("sku.json");
-    const data=  await response.json
+    const data=  await response.json();
+    console.log(data)
 };
 
+
 getSku();
-productos.forEach((product)=> {
+data.forEach((product)=> {
 let content = document.createElement("div"); 
 content.className = "card";  
 content.innerHTML = `
